@@ -1,14 +1,14 @@
 <template>
 <div id="Contact" :class="dark?'dark container mt-5 pt-5':'container pt-5 mt-5'">
 <div :class="dark ? 'darkMyContact has-text-centered pt-5 pb-5 mt-5 mb-5':'contact has-text-centered pt-5 pb-5 mt-5 mb-5'">Contact</div>
-<div class="columns m-5 p-5">
-<div class="column m-5 " data-aos="fade-down"
+<div class="columns m-2 p-2">
+<div class="column m-2 " data-aos="fade-down"
      data-aos-easing="linear"
      data-aos-duration="1500">
 <img src="/undraw_profile_data_re_v81r.svg"/>
 </div>
-<div class="column m-5" data-aos="zoom-in-left" data-aos-duration="3000">
-<div :class="dark ? 'darkBox m-5 p-5':'box m-5 p-5'" >
+<div class="column m-2" data-aos="zoom-in-left" data-aos-duration="3000">
+<div :class="dark ? 'darkBox m-2 p-2':'box m-2 p-2'" >
   <form @submit.prevent="formData" >
         <b-field >Name
             <b-input v-model="Name" required></b-input>
@@ -92,6 +92,10 @@ export default {
 }
 </script>
 <style scoped>
+*{
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
 .darkMyContact{
   font-size: 35px;
     font-weight: 600;
