@@ -120,4 +120,21 @@ export default {
   hyphens: auto;
 
 }
+@media only screen and (max-width: 350px) {
+ .darkMyProjects{
+  font-size: 26px;
+    font-weight: 600;
+    color:#ec255a;
+    padding: 20px;
+}
+.myProjects{
+    font-size: 26px;
+    font-weight: 600;
+    color:#292C6D;
+    padding: 20px;
+}
+.title{
+  font-size:24px
+}
+}
 </style>
