@@ -43,16 +43,14 @@
             >
               <path d="M2 11H22V13H2V11Z" fill="currentColor" />
             </svg>
-            <span class="m-5 p-5" :style="dark ?'color:white':'color:black'">{{ name.content }}</span>
+            <span  :style="dark ?'color:white':'color:black'">{{ name.content }}</span>
           </div>
         </div>
-        <b-button class="downloadButton p-5 "><a href="/PALLAVI Resume (1).pdf" download :style="dark ?'color:white':'color:black'">DOWNLOAD RESUME</a></b-button>
+        <b-button class="downloadButton "><a href="/PALLAVI Resume (1).pdf" download :style="dark ?'color:white':'color:black'">DOWNLOAD RESUME</a></b-button>
       </div>
     </div>
     <div :class="dark? 'darkResume has-text-centered':'has-text-centered Resume'">Skills</div>
-    <div class="Progress" data-aos="fade-up"
-    data-aos-duration="3000" 
-     data-aos-anchor-placement="bottom-bottom">
+    <div class="Progress" data-aos="zoom-in-up" data-aos-duration="3000">
       <radial-progress-bar
         v-for="(steps, index) in completedSteps"
         :key="index"
@@ -74,7 +72,7 @@
         <div class = "vertical"></div>
         <span
         
-          class="p-2 m-5 workExperience"
+          class="p-2 m-2 workExperience"
           style="border-radius: 50px; border: 1px solid #ec255a"
         >
           {{ item.date }}
@@ -220,13 +218,12 @@ export default {
   font-weight: 700;
 }
 .downloadButton {
+ display:flex;
+  margin: 30px auto;
   background:transparent;
-  border-color: #ec255a;
-  border-radius: 55px;
-  width: 35%;
-  margin-left: 30%;
-  margin-right: 30%;
-  cursor: pointer;
+  cursor:pointer;
+  color:white;
+  border:1px solid #ec255a;
   margin-top: 50px;
 }
 button:hover{
@@ -249,15 +246,6 @@ button:hover{
 }
 }
 @media only screen and (max-width: 1406px) {
-.downloadButton {
-  border-color: #ec255a;
-  border-radius: 55px;
-  width: 48%;
-  margin-left: 30%;
-  margin-right: 30%;
-  cursor: pointer;
-  margin-top: 50px;
-}
         .data {
   display: flex;
   align-items: flex-start;
@@ -304,5 +292,30 @@ button:hover{
             position:absolute;
             left: 50%;
         }
+}
+@media only screen and (max-width: 350px) {
+  .darkResume{
+       font-size: 24px;
+    font-weight: bold;
+    color: #ec255a;
+    padding: 0px;
+}
+.Resume {
+      font-size: 26px;
+    font-weight: bold;
+    color: #292c6d;
+    padding: 0px;
+}
+.details {
+  margin: 10px;
+  max-width: 300px;
+}
+.column{
+  padding:0px
+}
+.info {
+  font-size: 21px;
+  font-weight: 700;
+}
 }
 </style>
