@@ -56,9 +56,12 @@ export default {
     },
 }
 </script>
-<style scoped>
+ <style scoped>
+.columns{
+  margin:0px
+}
 .panel {
-  background: linear-gradient(111.7deg, #161853 60%, #292c6d 60%);
+  background: linear-gradient(110.9deg, #161853 60%, #292c6d 60%);
   border-radius:0px;
   padding: 40px;
 }
@@ -73,7 +76,24 @@ export default {
   color: #ec255a;
   font-weight: bold;
 }
+    .moreButton {
+  display:flex;
+  margin: 30px auto;
+  background:transparent;
+  cursor:pointer;
+  color:white;
+  border:1px solid #ec255a;
+} 
+.darkMoreButton{
+  display:flex;
+  margin: 30px auto;
+  background:transparent;
+  cursor:pointer;
+  color:white;
+  border:1px solid #ec255a;
+}
 .profession {
+  display:block;
   font-size: 50px;
   justify-content: center;
   justify-items: center;
@@ -97,76 +117,19 @@ export default {
   margin: 40px;
 }
 .image-background1 {
-  /* background: linear-gradient(to right, #72b527 50%, #ffffff 50%); */
-  /* background: linear-gradient(60deg, #72b527 60%, #ffffff 60%); */
   padding-left: 30px;
 }
 .image-background2 {
-  /* background-color: #ffffff; */
   padding-top: 90px;
   margin-top: 90px;
 }
-.moreButton {
-  border-radius: 50px;
-  color: #faedf0;
-  background-color: #292c6d;
-  border-color: #ec255a;
-  width: 25%;
-  margin-left: 40%;
-  margin-right: 40%;
-  cursor: pointer;
-}
-.darkMoreButton{
-  border-radius: 50px;
-  color: white;
-  background-color: transparent;
-  border-color: #ec255a;
-  width: 25%;
-  margin-left: 40%;
-  margin-right: 40%;
-  cursor: pointer;
-}
+
 button:hover{
   background:#ec255a;
   border:none;
  font-weight:700px
 }
-
-@media only screen and (max-width: 1669px) {
-.panel {
-  background: linear-gradient(109.5deg, #161853 60%, #292c6d 60%);
-}
-}
-@media only screen and (max-width: 1600px) {
-    .panel {
-  background: linear-gradient(109deg, #161853 60%, #292c6d 60%);
-}
-}
-@media only screen and (max-width: 1370px) {
-     .panel {
-  background: linear-gradient(108.8deg, #161853 60%, #292c6d 60%);
-}
-}
-@media only screen and (max-width: 1329px) {
-     .panel {
-  background: linear-gradient(108.6deg, #161853 60%, #292c6d 60%);
-}
-}
 @media only screen and (max-width: 1315px) {
-.moreButton {
-  width: 40%;
-  margin-left: 33%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
-.darkMoreButton{
-    width: 40%;
-  margin-left: 33%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
 .name {
   font-size: 35px;
 }
@@ -189,20 +152,7 @@ button:hover{
   max-height: 100%;
   max-width: 100%;
 }
-.moreButton {
-  width: 45%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
-.darkMoreButton{
-  width: 45%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
+
 .name {
   font-size: 30px;
 }
@@ -235,20 +185,7 @@ button:hover{
   padding: 0px;
   margin-top: 0px;
 }
-.moreButton {
-  width: 30%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
-.darkMoreButton{
-  width: 30%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
+
 .name {
   font-size: 25px;
 }
@@ -266,53 +203,22 @@ button:hover{
   margin-right: 30px;
 }
 }
-@media only screen and (max-width: 589px) {
-    .moreButton {
-  width: 38%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-} 
-.darkMoreButton{
-  width: 38%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
+@media only screen and (max-width: 350px) {
+.name {
+  font-size: 21px;
+}
+.profession {
+  font-size: 20px;
+}
+.paragraph {
+  font-size: 16px;
+  justify-content: center;
+  justify-items: center;
+  color: #faedf0;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 }
-@media only screen and (max-width: 460px) {
-    .moreButton {
-  width: 42%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
-.darkMoreButton{
- width: 42%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-} 
-}
-@media only screen and (max-width: 400px) {
-    .moreButton {
-  width: 48%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-} 
-.darkMoreButton{
-   width: 48%;
-  margin-left: 30%;
-  margin-right: 38%;
-  margin-bottom: 50px;
-  margin-top: 0px;
-}
-}
-
 </style>
