@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <b-navbar :fixed-top="true"  :class="dark ? 'darkMode': 'color'">
         <template #brand>
             <b-navbar-item tag="router-link" :to="{ path: '/' }">
@@ -12,7 +12,7 @@
   border:none;
   border-radius:4%;
  font-weight:700px;"
-         class="m-4 navbar2"
+         class=" navbar2"
                @click="setLightMode"
                 v-model="dark"
                >
@@ -73,13 +73,7 @@ export default {
 }
 </script>
 <style >
-*{
-  
-    /* Ghost CSS 
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;*/
-}
+
 .navbar .navbar-item:hover{
   background:#ec255a;
   border:none;
@@ -114,6 +108,11 @@ export default {
     box-shadow: 0 8px 16px rgb(10 10 10 / 10%);
     padding: 0.5rem 0;
 }
+}
+@media only screen and (max-width: 350px) {
+ .default{
+  margin:0px
+ }
 }
 </style>
 
