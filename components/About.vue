@@ -1,11 +1,11 @@
 <template>
   <div id="About" :class="dark ? 'darkaboutPage mt-5' : 'aboutPage mt-5'">
     <div class="columns p-5">
-      <div class="column p-5 m-5" data-aos="fade-up"
+      <div class="column" data-aos="fade-up"
     data-aos-duration="1000" >
       <img src="/undraw_portfolio_update_re_jqnp.svg" />
       </div>
-      <div class="column p-5 m-5" data-aos="fade-up"
+      <div class="column " data-aos="fade-up"
     data-aos-duration="1000" >
         <div
           :class="dark ? 'darkAboutMe' : 'aboutMe'"
@@ -82,6 +82,20 @@ export default {
 }
 .paragraph {
   /* padding: 30px; */
+}
+@media only screen and (max-width: 350px) {
+ .aboutMe {
+    font-size: 21px;
+    font-weight: bold;
+    color: #292c6d;
+    padding:0px
+  }
+  .fullName {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #292c6d;
+  }
 }
 @media only screen and (min-width: 1370px) {
   .aboutMe {
